@@ -31,8 +31,8 @@ DROP TABLE IF EXISTS `bookings`;
 CREATE TABLE IF NOT EXISTS `bookings` (
   `booking_id` int NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
-  `vehicle_id` int NOT NULL,
-  `driver_id` int NOT NULL,
+  `vehicle_id` int NOT NULL DEFAULT 0,
+  `driver_id` int NOT NULL DEFAULT 0,
   `service_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `is_home_moving` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `other_service_type` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
