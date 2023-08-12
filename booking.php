@@ -238,7 +238,7 @@ function build_calendar()
                             <input name="user_id" type="hidden" id="user_id" class="form-control" value="<?php echo $_SESSION['user_id']; ?>">
                             <input name="release_another_booking" type="hidden" id="release_another_booking" class="form-control" value="no">
                             <input name="service_status" type="hidden" id="service_status" class="form-control" value="Analyzing">
-                            <input name="driver_id" type="hidden" id="driver_id" class="form-control" value="N/A">
+                            <input name="driver_id" type="hidden" id="driver_id" class="form-control" value="0">
 
                             <div class="col-md-12">
                                 <label for="service_type">Pick up a service:</label>
